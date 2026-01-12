@@ -3,7 +3,7 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "/^repos\\.ya?ml$/"
+        "/^repo-tracker\\.ya?ml$/"
       ],
       "matchStrings": [
         "- (?<depName>[^\\s]+)\\s+(?<currentDigest>[a-f0-9]{40})(?:\\s+#(?<currentValue>[^\\s]+))?"
