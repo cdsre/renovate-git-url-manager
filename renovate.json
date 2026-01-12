@@ -1,0 +1,13 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^repos\\.ya?ml$"],
+      "matchStrings": [
+        "- (?<depName>[^\\s]+)\\s+(?<currentDigest>[a-f0-9]{40})(?:\\s+#(?<currentValue>[^\\s]+))?"
+      ],
+      "datasourceTemplate": "git-tags",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
