@@ -6,7 +6,7 @@
         "^repo-tracker\\.ya?ml$"
       ],
       "matchStrings": [
-        "- github\\.com/(?<depName>[\\w.-]+/[\\w.-]+)\\s+(?<currentDigest>[a-f0-9]{40})\\s+#(?<currentValue>v?[0-9.]+)"
+        "- github\\.com\\/(?<depName>\\S+)\\s*(?<currentDigest>[a-f0-9]{40})\\s#(?<currentValue>\\S+)$"
       ],
       "datasourceTemplate": "github-tags",
       "packageNameTemplate": "{{depName}}",
