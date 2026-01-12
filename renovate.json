@@ -2,13 +2,12 @@
   "customManagers": [
     {
       "customType": "regex",
-      "managerFilePatterns": [
-        "/^repo-tracker\\.ya?ml$/"
-      ],
+      "managerFilePatterns": ["^repo-tracker\\.ya?ml$"],
       "matchStrings": [
-        "- (?<depName>[^\\s]+)\\s+(?<currentDigest>[a-f0-9]{40})(?:\\s+#(?<currentValue>[^\\s]+))?"
+        "- github\\.com/(?<depName>[\\w.-]+/[\\w.-]+)\\s+(?<currentDigest>[a-f0-9]{40})\\s+#(?<currentValue>v?[0-9.]+)"
       ],
       "datasourceTemplate": "github-tags",
+      "lookupNameTemplate": "{{depName}}",
       "versioningTemplate": "semver"
     }
   ]
