@@ -1,7 +1,4 @@
 {
-  "addLabels": [
-    "repo-tracker"
-  ],
   "customManagers": [
     {
       "customType": "regex",
@@ -18,6 +15,9 @@
   ],
   "packageRules": [
     {
+      "labels": [
+        "repo-tracker"
+      ], 
       "matchManagers": [
         "custom.regex"
       ],
