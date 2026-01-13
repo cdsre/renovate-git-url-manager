@@ -3,13 +3,13 @@
     {
       "customType": "regex",
       "managerFilePatterns": [
-        "^repo-tracker\\.ya?ml$"
+        "repo-tracker\\.ya?ml$"
       ],
       "matchStrings": [
-        "- github\\.com\\/(?<depName>\\S+)\\s*(?<currentDigest>[a-f0-9]{40})\\s#(?<currentValue>\\S+)$"
+        "- github\\.com\\/(?<packageName>\\S+)\\s*(?<currentDigest>[a-f0-9]{40})\\s#(?<currentValue>\\S+)$"
       ],
       "datasourceTemplate": "github-tags",
-      "depNameTemplate": "{{depName}}",
+      "packageNameTemplate": "{{packageName}}",
       "versioningTemplate": "semver"
     }
   ]
