@@ -9,7 +9,7 @@
         "- github\\.com\\/(?<depName>\\S+)\\s*(?<currentDigest>[a-f0-9]{40})\\s#(?<currentValue>\\S+)$"
       ],
       "datasourceTemplate": "github-tags",
-      "packageNameTemplate": "{{depName}}",
+      "depNameTemplate": "{{depName}}",
       "versioningTemplate": "semver"
     }
   ]
