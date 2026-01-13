@@ -6,10 +6,10 @@
         "/^repo-tracker\\.ya?ml$/"
       ],
       "matchStrings": [
-        "- github\\.com\\/(?<packageName>\\S+)\\s*(?<currentDigest>[a-f0-9]{40})\\s#(?<currentValue>\\S+)$"
+        "- github\\.com\\/(?<depName>\\S+)\\s*(?<currentDigest>[a-f0-9]{40})\\s#(?<currentValue>\\S+)$"
       ],
       "datasourceTemplate": "github-tags",
-      "packageNameTemplate": "{{packageName}}",
+      "depNameTemplate": "{{depName}}",
       "versioningTemplate": "semver"
     }
   ]
