@@ -1,5 +1,7 @@
 {
-  "addLabels": ["repo-tracker"],
+  "addLabels": [
+    "repo-tracker"
+  ],
   "customManagers": [
     {
       "customType": "regex",
@@ -17,7 +19,7 @@
   "packageRules": [
     {
       "matchManagers": [
-        "regex"
+        "custom.regex"
       ],
       "matchUpdateTypes": [
         "digest",
@@ -26,7 +28,10 @@
         "patch"
       ],
       "matchDatasources": "github-tags",
-      "matchFileNames": ["repo-tracker.yaml", "repo-tracker.yml"],
+      "matchFileNames": [
+        "repo-tracker.yaml",
+        "repo-tracker.yml"
+      ],
       "groupName": "Repo Tracker Update",
       "groupSlug": "repo-tracker-udpate"
     }
