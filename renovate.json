@@ -10,7 +10,8 @@
       ],
       "datasourceTemplate": "github-tags",
       "depNameTemplate": "{{depName}}",
-      "versioningTemplate": "semver"
+      "versioningTemplate": "semver",
+      "depTypeTemplate": "repo-tracker"
     }
   ],
   "packageRules": [
